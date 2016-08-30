@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.spring.gradle.shopping.entity.model.ProductBean"
+		table="products">
+		<id name="productId" column="product_id">
+			<generator class="increment"></generator>
+		</id>
+		<property name="categoryId" column="product_category_id" />
+		<property name="brandId" column="brand_id" />
+		<property name="modelName" column="model_name" />
+		<property name="quantity" column="product_quantity" />
+		<property name="discount" column="product_discount" />
+		<property name="price" column="product_price" />
+		<property name="weight" column="product_weight" />
+		<property name="shortDescription" column="product_short_desc" />
+		<property name="longDescription" column="product_long_desc" />
+		<property name="productImage" column="product_image" />
+		<property name="updateDate" column="product_update_date" />
+		<property name="live" column="product_live" />
+		<property name="stock" column="product_stock" />
+
+		<list name="productOptionsBean" cascade="all" lazy="false">
+			<key column="product_id"></key>
+			<index column="type"></index>
+			<one-to-many
+				class="com.spring.gradle.shopping.entity.model.ProductOptionBean" />
+		</list>
+	</class>
+
+</hibernate-mapping>  

@@ -1,0 +1,118 @@
+
+body, div, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+img {
+    border: 0 none;
+}
+header {
+    display: block;
+}
+body {
+    background: rgba(0, 0, 0, 0) url("images/bg.png") repeat scroll 0 0;
+    color: #3a2127;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+#container {
+    position: relative;
+}
+.clr {
+    clear: both;
+}
+#container > header {
+    display: block;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+}
+#container > header h1 {
+    color: #275973;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    padding: 0 0 5px;
+    position: relative;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);
+}
+#container > header h1 strong {
+    color: #275973;
+    font-family: "Open Sans Condensed","Arial Narrow",Arial,sans-serif;
+    font-size: 28px;
+    line-height: 35px;
+    padding: 0 5px;
+    text-transform: uppercase;
+}
+#container > header h1 span {
+    color: #5a99ba;
+    display: block;
+    font-family: "Alegreya SC",Georgia,serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 20px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.freshdesignweb-top {
+    background: rgba(0, 0, 0, 0.1) none repeat scroll 0 0;
+    box-shadow: 3px 0 5px rgba(0, 0, 0, 0.2);
+    color: #275973;
+    font-size: 11px;
+    line-height: 44px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+}
+.freshdesignweb-top a {
+    color: #fcca00;
+}
+.freshdesignweb-top a:hover {
+    color: #0b2f42;
+}
+.freshdesignweb-top h1 {
+    background: rgba(0, 0, 0, 0) url("images/logo.png") no-repeat scroll 0 0;
+    font-family: "Open Sans Condensed","Arial Narrow",Arial,sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0 auto;
+    text-shadow: 2px 2px 0 #f2f2f2, 1px 2px 0 #b1b1b2;
+    text-transform: uppercase;
+    width: 490px;
+}
+.freshdesignweb-buttom {
+    background: rgba(0, 0, 0, 0.1) none repeat scroll 0 0;
+    box-shadow: 3px 0 5px rgba(0, 0, 0, 0.2);
+    color: #009;
+    font-family: "Open Sans Condensed","Arial Narrow",Arial,sans-serif;
+    font-size: 11px;
+    line-height: 24px;
+    position: relative;
+    text-transform: uppercase;
+}
+.freshdesignweb-buttom a {
+    display: block;
+    float: left;
+    letter-spacing: 1px;
+    padding: 0 10px;
+    text-shadow: 0 1px 1px #fff;
+}
+.freshdesignweb-buttom a:hover {
+    background: #fff none repeat scroll 0 0;
+}
+.freshdesignweb-buttom span.right {
+    float: right;
+    font-weight: bold;
+}
+.freshdesignweb-buttom span.right a {
+    display: block;
+}

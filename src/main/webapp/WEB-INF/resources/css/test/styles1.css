@@ -1,0 +1,125 @@
+
+@import "http://fonts.googleapis.com/css?family=Gentium+Basic:400,700|Yanone+Kaffeesatz";
+#fdw nav select {
+    display: none;
+}
+#fdw nav ul {
+    display: block;
+    z-index: 999999;
+}
+#fdw nav ul li {
+    display: inline-block;
+    margin-left: 30px;
+    /* padding: 50px 3px 30px; */
+    position: relative;
+}
+#fdw nav ul li a:link, #fdw nav ul li a:visited {
+    color: #444;
+    display: inline-block;
+    font: 20px "Yanone Kaffeesatz",sans-serif;
+    position: relative;
+    text-transform: uppercase;
+}
+#fdw nav ul li a:hover, #fdw nav ul li a:active {
+    color: #e25d29;
+    text-decoration: none;
+}
+#fdw nav ul li span {
+    background: rgba(0, 0, 0, 0) url("images/nav_arrow.png") no-repeat scroll left -8px;
+    bottom: 6px;
+    display: block;
+    float: right;
+    font: 0px/0 a;
+    height: 8px;
+    margin: 0 0 0 3px;
+    position: absolute;
+    right: -12px;
+    width: 7px;
+}
+#fdw nav ul li.current {
+    /* border-bottom: 2px solid #e25d29; */
+}
+#fdw nav ul li.current a {
+    color: #e25d29;
+    cursor: default;
+}
+#fdw nav ul li.current a span {
+    background: rgba(0, 0, 0, 0) url("../images/nav_arrow.png") no-repeat scroll left 0;
+}
+#fdw nav ul li.current ul li a {
+    cursor: pointer;
+}
+#fdw nav ul li ul.sub_menu {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: #fff none repeat scroll 0 0;
+    border-color: #e25d29 #ececec #ececec;
+    border-image: none;
+    border-style: solid;
+    border-width: 5px 1px 1px;
+    box-shadow: 0 6px 7px #121012;
+    display: none;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    /* top: 90px; */
+    z-index: 999999;
+}
+#fdw nav ul li ul.sub_menu li.arrow_top {
+    background: rgba(0, 0, 0, 0) url("images/arrow_top.png") no-repeat scroll left top;
+    border: medium none;
+    display: block;
+    height: 8px;
+    left: 12px;
+    position: absolute;
+    top: -12px;
+    width: 13px;
+}
+#fdw nav ul li ul.sub_menu li {
+    border-bottom: 1px solid #ececec;
+    float: none;
+    margin: 0;
+    padding: 0;
+}
+#fdw nav ul li ul.sub_menu li a {
+    color: #777;
+    font: 13px Arial,tahoma,sans-serif;
+    padding: 12px;
+    text-transform: capitalize;
+    white-space: nowrap;
+    width: 150px;
+}
+#fdw nav ul li ul.sub_menu li a:hover {
+    background: #f9f9f9 none repeat scroll 0 0;
+    color: #333;
+}
+#fdw nav ul li ul.sub_menu li a.subCurrent {
+    color: #e25d29;
+    cursor: default;
+}
+#fdw nav ul li ul.sub_menu li a.subCurrent:hover {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+#fdw nav ul li {
+    margin-left: 12px;
+}
+}
+@media only screen and (max-width: 767px) {
+#fdw nav ul {
+    display: none;
+}
+#fdw nav select {
+    background: #f9f9f9 none repeat scroll 0 0;
+    border: 1px solid #e3e3e3;
+    color: #777;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 30px;
+    padding: 6px;
+    width: 100%;
+}
+}

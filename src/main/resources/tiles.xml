@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+	<definition name="baseDefinitionWithoutLeftPane" template="/WEB-INF/jsp/layoutWithoutLeftPane.jsp">
+		<put-attribute name="title" value="Real Estate" />
+		<put-attribute name="header" value="/WEB-INF/jsp/common/header.jsp" />
+		<put-attribute name="leftPane" value="" />
+		<put-attribute name="middleHeader" value="" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/common/footer.jsp" />
+	</definition>
+
+	
+	<definition name="enquiryComments" extends="propertyManagementLayout">
+		<put-attribute name="title" value="Enquiry - Real Estate" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/admin/propertyManagement/enquiry/enquiryComments.jsp" />
+	</definition>
+</tiles-definitions>

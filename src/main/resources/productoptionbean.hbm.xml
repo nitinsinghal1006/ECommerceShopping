@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.spring.gradle.shopping.entity.model.ProductOptionBean"
+		table="productoptions">
+		<id name="productOptionId" column="product_option_id">
+			<generator class="increment"></generator>
+		</id>
+		<property name="productId" column="product_id" />
+		<!-- <property name="optionId" column="option_id" /> <property name="optionGroupId" 
+			column="option_group_id" /> -->
+		<many-to-one name="optionBean"
+			class="com.spring.gradle.shopping.entity.model.OptionBean" column="option_id"
+			lazy="false" />
+		<many-to-one name="optionGroupBean"
+			class="com.spring.gradle.shopping.entity.model.OptionGroupBean"
+			column="option_group_id" lazy="false" />
+	</class>
+
+</hibernate-mapping>  
